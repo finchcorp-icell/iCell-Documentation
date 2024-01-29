@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 8.9.0.604">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Adding Products</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Adding Products">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Adding Products" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="iCaaS API Documentation" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>iCaaS API Documentation</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="AddingProducts"
+		  data-hnd-context="8"
+		  data-hnd-title="Adding Products"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="TransactionFunctions.html">Transaction Functions</a></li><li><a href="InputstotheAPI.html">Inputs to the API</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="InputstotheAPI.html" title="Inputs to the API" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="LoyaltyandAccountDetails.html" title="Loyalty and Account Details" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="DeliverySurchargesandExtras.html" title="Delivery, Surcharges and Extras" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Adding Products</h2>
+
+            <div class="main-content">
+                
+<p class="rvps2"><span class="rvts6">The products list is a JSON Array of product JSON Objects. There is no inherent limit in how many products can be added here, the same product can be added in different objects if required (if it has a different price, instructions or comments etc).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each product object has the following attributes:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">product</span><span class="rvts23"> </span><span class="rvts29">(required)</span><span class="rvts23"> – the product id (from the catalog) of the product to be added.</span></li>
+ <li class="rvps6"><span class="rvts25">quantity </span><span class="rvts29">(required)</span><span class="rvts23"> – the quantity of the product to add&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">cartid</span><span class="rvts23"> </span><span class="rvts29">(recommended web only)</span><span class="rvts23">– the cart id (line number) allows the web cart to synchronise with the returned transaction.&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">price</span><span class="rvts23"> – the price to sell the item for, will override the till price. The price can either be absolute, or a relative adjustment to the price listed in the catalog.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+  <li style="margin-left: 0px" class="rvps8"><span class="rvts23">absolute price, prefix with an @ symbol (e.g. </span><span class="rvts30">"price": "@24.99"</span><span class="rvts23">)</span></li>
+  <li style="margin-left: 0px" class="rvps8"><span class="rvts23">relative % adjustment, &nbsp;add a % sign to the end (e.g. </span><span class="rvts30">"price": "-10%"</span><span class="rvts23"> to sell at 10% discount, or </span><span class="rvts30">"price": "10%"</span><span class="rvts23"> add a 10% surcharge, at item level)</span></li>
+  <li style="margin-left: 0px" class="rvps8"><span class="rvts23">relative $ adjustment, &nbsp;just specify the adjustment amount on its own (e.g. </span><span class="rvts30">"price": "-2"</span><span class="rvts23"> to sell with a $2.00 discount, or </span><span class="rvts30">"price": "2"</span><span class="rvts23"> to add a $2.00 surcharge, at item level)</span></li>
+ </ul>
+ <li class="rvps6"><span class="rvts25">instructions</span><span class="rvts23"> – item modifications, such as sides or instructions for meals (e.g. chips, cook rare etc). These will generally be instructions to the kitchen (for prepared items) and are listed as sub-items in the resulting transaction. Instructions are a comma separated list of free text, free text with a $ amount, or a product id.</span><br/><span class="rvts23">The </span><a class="rvts31" href="ProductInstructions.html">instructions end point</a><span class="rvts23"> provides data allowing the website to create a user interface to select these instructions to be provided.</span></li>
+ <li class="rvps6"><span class="rvts25">comments</span><span class="rvts23"> - comments to add to the product. These will generally be added by the a product behaviour as the reason for a price change.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts32">NOTE : On web connections you need to supply ALL products and sundries each time you update the transaction, the transaction data is reset each time you specify either the products or sundries section. On APP connections, you only specify those products you wish to ADD to the transaction.</span></p>
+<p class="rvps6"><span class="rvts33"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample products section:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"products"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts19">&nbsp; &nbsp; &nbsp; &nbsp;"product"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"27103"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"@15.50"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"instructions"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Medium Rare,Chips &amp; Salad,Pepper Sauce $2.00,1001"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Sunday Steak promotion"</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1521"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"@7"</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"3"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"152"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"-50%"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2nd drink half price"</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts20">]</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts37">From a web till, any attempt to modify the products in an existing transaction with payments made will generate the following error:</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps7"><span class="rvts34">{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"instance"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"1"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"EFinchcorpCannotModify"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"time"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"2021-07-12T19:50:43.123+10:00"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"message"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"[deny]&nbsp;Modify&nbsp;not&nbsp;allowed&nbsp;for&nbsp;web&nbsp;order&nbsp;with&nbsp;payment&nbsp;line"</span></p>
+<p class="rvps7"><span class="rvts34">}</span><span class="rvts6"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2020  by Finchcorp Systems. All Rights Reserved.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

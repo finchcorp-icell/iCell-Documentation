@@ -1,0 +1,987 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="generator" content="HelpNDoc Standard Edition 8.9.0.604">
+	<title>iCaaS API Documentation</title>
+	<style type="text/css">
+	/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6
+{
+}
+span.rvts7
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts8
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts9
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts10, span.rvts10
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts11
+{
+ font-size: 16pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ font-weight: bold;
+}
+span.rvts12 /* Font Style */
+{
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts13, span.rvts13 /* Font Style */
+{
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts14
+{
+ font-style: italic;
+}
+span.rvts15
+{
+ font-weight: bold;
+}
+a.rvts16, span.rvts16
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts17
+{
+ font-size: 11pt;
+ color: #222222;
+ background-color: #ffffff;
+}
+span.rvts18
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts19
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000080;
+}
+span.rvts20
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #008000;
+}
+span.rvts21
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000000;
+}
+span.rvts22
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #0000ff;
+}
+span.rvts23
+{
+}
+span.rvts24
+{
+ font-style: italic;
+ color: #00b050;
+}
+span.rvts25
+{
+ font-style: italic;
+}
+span.rvts26
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #008000;
+}
+span.rvts27
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000000;
+}
+span.rvts28
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000080;
+}
+span.rvts29
+{
+ font-style: italic;
+ color: #ff0000;
+}
+span.rvts30
+{
+ background-color: #f2f2f2;
+}
+a.rvts31, span.rvts31
+{
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.rvts32
+{
+ font-style: italic;
+ font-weight: bold;
+ color: #ff0000;
+}
+span.rvts33
+{
+ color: #ff0000;
+}
+span.rvts34
+{
+ font-size: 9pt;
+ font-family: 'consolas';
+ color: #000000;
+}
+span.rvts35
+{
+ font-size: 9pt;
+ font-family: 'consolas';
+ color: #a31515;
+}
+span.rvts36
+{
+ font-size: 9pt;
+ font-family: 'consolas';
+ color: #0451a5;
+}
+span.rvts37
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: ;
+}
+span.rvts38
+{
+ font-weight: bold;
+}
+span.rvts39
+{
+ font-style: italic;
+ color: #00b050;
+}
+span.rvts40
+{
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts41
+{
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #ff0000;
+}
+span.rvts42
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+ color: #000000;
+}
+span.rvts43
+{
+ font-size: 9pt;
+ font-family: 'consolas';
+ color: #098658;
+}
+span.rvts44
+{
+ font-size: 9pt;
+ font-family: 'consolas';
+ font-weight: bold;
+ color: #0451a5;
+}
+span.rvts45
+{
+ font-size: 8pt;
+ font-family: 'Courier New', 'Courier', monospace;
+ color: #000000;
+ background-color: #f2f2f2;
+}
+span.rvts46
+{
+ font-size: 16pt;
+ font-weight: bold;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2
+{
+}
+.rvps3
+{
+ text-align: center;
+}
+.rvps4
+{
+ text-align: left;
+ text-indent: 0px;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 4px 0px;
+}
+.rvps5 /* Paragraph Style */
+{
+ text-align: center;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-left: none;
+ padding: 2px 0px 2px 0px;
+ margin: 7px 0px 7px 0px;
+}
+.rvps6
+{
+}
+.rvps7
+{
+ background: #fffffe;
+}
+.rvps8
+{
+ margin: 0px 0px 0px 96px;
+}
+.rvps9
+{
+ text-indent: 48px;
+}
+.rvps10
+{
+ text-indent: 48px;
+}
+/* ========== Lists ========== */
+.list0 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;}
+.list1 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: circle;}
+.list2 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;}
+.list3 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
+.list4 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;}
+.list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;}
+
+
+	
+
+		body {
+			align-items: stretch;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+
+		.toc {
+			height: 100vh;
+			flex: 0 0 25%;
+			overflow: auto;
+		}
+
+		.content {
+			height: 100vh;
+			overflow: auto;
+		}
+
+		.toc-inner, .content-inner {
+			margin: 1em;
+		}
+
+		.toc-inner a {
+			display: block;
+			padding: 0.5em 0 0.5em 0;
+			text-decoration: none;
+			color: #000;
+			font-size: 11pt;
+			font-family: 'Segoe UI';
+		}
+
+		.toc-inner a:hover {
+			background-color: #ddd;
+		}
+
+		.toc-inner a.toclevel-2 { padding-left: 1em }
+		.toc-inner a.toclevel-3 { padding-left: 2em }
+		.toc-inner a.toclevel-4 { padding-left: 3em }
+		.toc-inner a.toclevel-5 { padding-left: 4em }
+		.toc-inner a.toclevel-6 { padding-left: 5em }
+		.toc-inner a.toclevel-7 { padding-left: 6em }
+		.toc-inner a.toclevel-8 { padding-left: 7em }
+		.toc-inner a.toclevel-9 { padding-left: 8em }
+	
+
+	.copyright {
+		font-style: italic;
+		padding-top: 20px;
+	}
+
+	</style>
+</head>
+
+<body>
+	
+	<div class="toc">
+		<div class="toc-inner">
+			<a href="#Introduction" class="toclevel-1">Introduction</a><a href="#WhatYouNeedToStart" class="toclevel-2">What You Need To Start</a><a href="#AccessandAuthentication" class="toclevel-2">Access and Authentication</a><a href="#TransactionFunctions" class="toclevel-1">Transaction Functions</a><a href="#UsingtheTransactionAPI" class="toclevel-2">Using the Transaction API</a><a href="#SpecifyingtheAPIKey" class="toclevel-2">Specifying the API Key</a><a href="#SpecifyingtheTransactionId" class="toclevel-2">Specifying the Transaction Id</a><a href="#ResponsesandErrorCodes" class="toclevel-2">Responses and Error Codes</a><a href="#InputstotheAPI" class="toclevel-2">Inputs to the API</a><a href="#CashierLoginAPPonly" class="toclevel-3">Cashier Login (APP only)</a><a href="#LoyaltyandAccountDetails" class="toclevel-3">Loyalty and Account Details</a><a href="#AddingProducts" class="toclevel-3">Adding Products</a><a href="#DeliverySurchargesandExtras" class="toclevel-3">Delivery, Surcharges and Extras</a><a href="#PaymentDetails" class="toclevel-3">Payment Details</a><a href="#FinishinganOrder" class="toclevel-3">Finishing an Order</a><a href="#OutputsfromtheAPI" class="toclevel-2">Outputs from the API</a><a href="#GeneralInformation" class="toclevel-3">General Information</a><a href="#ProductList" class="toclevel-3">Product List</a><a href="#PaymentsList" class="toclevel-3">Payments List</a><a href="#SundriesList" class="toclevel-3">Sundries List</a><a href="#AttributesList" class="toclevel-3">Attributes List</a><a href="#CommandExecution" class="toclevel-2">Command Execution</a><a href="#CancelTransaction" class="toclevel-3">Cancel Transaction</a><a href="#CompleteTransaction" class="toclevel-3">Complete Transaction</a><a href="#StatusFunction" class="toclevel-2">Status Function</a><a href="#Samples" class="toclevel-2">Samples</a><a href="#SampleRequest" class="toclevel-3">Sample Request</a><a href="#Web" class="toclevel-4">Web </a><a href="#App" class="toclevel-4">App</a><a href="#SampleResponses" class="toclevel-3">Sample Responses</a><a href="#CatalogFunctions" class="toclevel-1">Catalog Functions</a><a href="#ActiveProductsInformation" class="toclevel-2">Active Products Information</a><a href="#StockLevels" class="toclevel-2">Stock Levels</a><a href="#NavigatorStructure" class="toclevel-2">Navigator Structure</a><a href="#ProductInstructions" class="toclevel-2">Product Instructions</a><a href="#SiteConfig" class="toclevel-2">Site Config</a><a href="#ImageFunctions1" class="toclevel-1">Image Functions</a>	
+		</div>
+	</div>
+	
+
+    <div class="content">
+		<div class="content-inner">
+			<a name="Introduction"></a><h1>Introduction</h1>
+<p class="rvps2"><span class="rvts6">This document describes how to access the API for iCell As A Service (iCaaS), which is a combination of two core API groups:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts6">Transaction functions which give access to the full functionality of FInchcorp Systems iCell till, with the user interface replaced by a REST/JSON interface</span></li>
+ <li class="rvps2"><span class="rvts6">Catalog and Image functions give access to data via the Finchcorp Systems iConnect backend system, providing access to product lists, product images and other information to provide a user interface to the end user.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The API, and thus the document covers two distinct use cases:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts6">WEB - access to the API from a web store</span></li>
+ <li class="rvps2"><span class="rvts6">APP - access to the API from an in store tablet or iPhone application</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Some sections will state 'APP only' - these sections can be safely ignored by web developers.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<h1 class="rvps4"><span class="rvts0"><span class="rvts11"></span></span><span class="rvts0"><span class="rvts46"></span></span></h1>
+<a name="WhatYouNeedToStart"></a><h2>What You Need To Start</h2>
+<p class="rvps2"><span class="rvts6">There are several configuration and security settings which will be set at the store running iCaaS, these are all set within iConnect Management Studio.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The information you will need:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts15">API Base URL</span><span class="rvts6"> : e.g. </span><span class="rvts14">https://210.241.124.11</span><span class="rvts6"> - I'll be using "https://SERVER" in the documentation when referring to this server address. Note that the URL may require a port number, in which case you will need to add ":port" to the end of the base URL.</span></li>
+ <li class="rvps2"><span class="rvts15">Username</span><span class="rvts6"> and </span><span class="rvts15">Password</span><span class="rvts6"> : These will be provided to be used as HTTP BASIC authentication to access all sections of the API.</span></li>
+ <li class="rvps2"><span class="rvts15">Location</span><span class="rvts6"> : This will allow you to distinguish between multiple virtual stores on the web corresponding to multiple locations within the venue, for example - The Bistro might be location 10 and the Liquor Store might be location 20. You will need to use the correct location when accessing the catalog to ensure you get the correct products and pricing.</span></li>
+ <li class="rvps2"><span class="rvts15">API KEY</span><span class="rvts6"> : this is a long GUID style key which you provide in the JSON request to the transaction end point. This serves two functions, firstly it provides additional security for the transaction API, and secondly it directs the transaction API to use the correct virtual tills for your request (the API key ties to a group of virtual tills, which normally will be part of the same location id you use for the catalog).</span></li>
+ <li class="rvps2"><span class="rvts6">(APP ONLY) </span><span class="rvts15">Cashier Token and Password</span><span class="rvts6"> : The APP should prompt for the cashier ID and password and send it in as part of the Transaction JSON input. However for testing purposes, you may be provided with a test cashier token and password.</span><span class="rvts6"></span></li>
+</ul>
+<a name="AccessandAuthentication"></a><h2>Access and Authentication</h2>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">All functions within the API use REST/JSON end points as follows:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><a class="rvts16" href="#TransactionFunctions">Transaction Functions</a><span class="rvts6"> will use a single end point </span><span class="rvts14">https://SERVER/Transaction</span><span class="rvts6"> using the </span><span class="rvts15">POST</span><span class="rvts6"> method with JSON input and JSON output.</span></li>
+ <li class="rvps2"><a class="rvts16" href="#CatalogFunctions">Catalog Functions</a><span class="rvts6"> will perform </span><span class="rvts15">GET</span><span class="rvts6"> requests to an end point formatted as &nbsp;</span><span class="rvts14">https://SERVER/Catalog/&lt;subfunction&gt;?locationid=&lt;locationid&gt;</span></li>
+ <li class="rvps2"><a class="rvts16" href="#ImageFunctions1">Image Functions</a><span class="rvts6"> will perform </span><span class="rvts15">GET</span><span class="rvts6"> requests to an end point formatted as </span><span class="rvts14">https://SERVER/Image?id=&lt;image id&gt;</span></li>
+</ul>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The sub functions for the catalog are documented in the </span><a class="rvts16" href="#CatalogFunctions">Catalog Functions</a><span class="rvts6"> section of this API.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">All requests to the API use basic authentication to access their functions (</span><span class="rvts17">RFC 7617).</span></p>
+<p class="rvps2"><span class="rvts17"><br/></span></p>
+<p class="rvps2"><span class="rvts17">Transaction functions are JSON in JSON out POST requests</span></p>
+<p class="rvps2"><span class="rvts17">Catalog functions are JSON out GET requests</span></p>
+<p class="rvps2"><span class="rvts17">Image functions are BINARY out GET requests.</span></p>
+<p class="rvps2"><span class="rvts17"><br/></span></p>
+<p class="rvps2"><span class="rvts17"></span><span class="rvts6"></span></p>
+<a name="TransactionFunctions"></a><h1>Transaction Functions</h1>
+<a name="UsingtheTransactionAPI"></a><h2>Using the Transaction API</h2>
+<p class="rvps2"><span class="rvts6">When a request is sent to iCaaS, it will attempt to find one of up to 10 virtual tills for you to operate with, the list of tills may be limited by the API KEY you supplied (when a single iCaaS installation is used for both web and tablet/app ordering, or dual location support).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If it finds an available virtual till (instance), it will convert the JSON request into a sequence of iCell commands and execute them. If an error occurs at any given point it will abort with an error code. The response transaction will have the ID of the instance used to assist with fault tracking.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If it cannot find an instance, it will return with an error code - see </span><a class="rvts16" href="#ResponsesandErrorCodes">Responses and Error Codes</a></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The transaction end point requires you input a structured JSON input which controls not just what data is entered into the virtual till, but also what actions may happen on doing so.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts18"><br/></span></p>
+<p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
+<a name="SpecifyingtheAPIKey"></a><h2>Specifying the API Key</h2>
+<p class="rvps2"><span class="rvts6">To access the transaction API, you MUST supply an API key. This is done as a top level name/value pair in the JSON such as:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"apikey"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"04A7E88F-0933-4295-AA02-34A79472BB2C"</span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This API key is provided by the physical store running the iCaaS</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+<a name="SpecifyingtheTransactionId"></a><h2>Specifying the Transaction Id</h2>
+<p class="rvps2"><span class="rvts6">One of the key JSON values that is provided is the transaction ID. This determines the mode that the request will be run in. This is a JSON name/value pair in the top level JSON object.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">One of four modes can occur (if transactionid is missing or is not one of the following then a 'transaction not found' error will be raised).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;">
+ <li class="rvps2"><span class="rvts6">(WEB ONLY) A quote is a non persistent transaction that only exists for the duration of the request, it cannot be added to or paid for in store. It uses few resources on the iCaaS system and should be used by the website whilst the customer is updating their shopping cart. To specify a quote use:</span><br/><span class="rvts19">"transactionid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"QUOTE"</span></li>
+ <li class="rvps2"><span class="rvts6">To create a new persistent transaction which will appear in store, which can be added to and paid for you need to create a "NEW" transaction. This will return a nine character iCell transaction ID which can be used to refer to the same transaction at a later time. To specify a new transaction use:</span><br/><span class="rvts19">"transactionid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"NEW"</span></li>
+ <li class="rvps2"><span class="rvts6">(APP ONLY) In bistro tables can be assigned and created by assigning a numeric transaction id. This will either create or load a transaction with that table number. To create or load a table (e.g. table 14) &nbsp;in the API use:</span><br/><span class="rvts19">"transactionid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"14"</span></li>
+ <li class="rvps2"><span class="rvts6">In all cases, a persistent transaction can be loaded into the APP or Website by specifying the 9 character transaction ID returned by the initial creation request. To access an existing transaction by its transaction id use:</span><br/><span class="rvts19">"transactionid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"A2B9GA6CP"</span></li>
+</ol>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts22"><br/></span></p>
+<p class="rvps2"><span class="rvts6">For a web app, the normal flow will be:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts6">Use QUOTE repeatedly whilst the customer is updating their cart by adding products.</span></li>
+ <li class="rvps2"><span class="rvts6">At the point where a customer proceeds to payment - BUT BEFORE they have specified payment details, use NEW to create a new persistent transaction with finalised pricing (which won't change unless you add more products).</span></li>
+ <li class="rvps2"><span class="rvts6">Once payment has been processed, use the transaction id returned to apply payments, extras and finalising order details to the transaction.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+<a name="ResponsesandErrorCodes"></a><h2>Responses and Error Codes</h2>
+<p class="rvps2"><span class="rvts6">The status determines the success or failure and state of the last request and have one of the following values</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts23">OK (success)– the transaction request was successful, and the transaction is open for more operations. Note that it is possible to get an OK even if you have sent an ‘order’ section in the request, this just shows that the transaction is still open and available to the local tills for pickup payment.</span></li>
+ <li class="rvps6"><span class="rvts23">(APP ONLY) FINAL (success) – the transaction request was successful, and the transaction is complete and fully paid for. The transaction can no longer be modified, even at the local tills. The local tills will however be able to retrieve it for viewing.</span></li>
+ <li class="rvps6"><span class="rvts23">AUTH (error) – the API key did not match any of the known virtual till instances.</span></li>
+ <li class="rvps6"><span class="rvts23">EFinchcorpTransactionLocked - this is stating the transaction is locked and the website/APP should retry a few seconds later.</span></li>
+ <li class="rvps6"><span class="rvts23">EFinchcorpXXXXXXX – this is a handled error normally presented at the till, the displayable message is contained in the message value.</span></li>
+ <li class="rvps6"><span class="rvts23">EXXXXXX – this is an unhandled exception and should be reported to support, along with logs for the instance and the message returned.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The instance is a value from 0 to 9 and is generally used for finding errors, or tracking logs and other issues.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The message will contain the description of an error if it occurs, it will not exist if the operation was successful (OK/FINAL).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample JSON error response:</span></p>
+<p class="rvps7"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"status"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"AUTH"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"message"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"No&nbsp;API&nbsp;key&nbsp;provided"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Note: Some particularly severe errors will not be returned in JSON, rather as HTTP response codes such as 401 for authorisation failed.</span></p>
+<p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
+<a name="InputstotheAPI"></a><h2>Inputs to the API</h2>
+<p class="rvps2"><span class="rvts6">The following sections describe the various parts of the JSON request, apart from transaction id and API key, the other parts are either objects or lists that enter transaction information or instruct the virtual till to some action.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+<a name="CashierLoginAPPonly"></a><h3>Cashier Login (APP only)</h3>
+<p class="rvps2"><span class="rvts6">The login object is only required for tablet/app use. </span><span class="rvts15">Web access does not require it.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">cashier</span><span class="rvts23"> – for tablet/app use, specify the cashier login token</span></li>
+ <li class="rvps6"><span class="rvts25">password</span><span class="rvts23"> – for tablet/app use, specify the cashier login password (as per iCell usage)</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23">The following is a sample of a login section</span></p>
+<p class="rvps6"><span class="rvts23"></span><br/><span class="rvts28">"login"</span><span class="rvts26">:</span><span class="rvts27"> </span><span class="rvts26">{</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"cashier"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"W1234DEMO"</span><span class="rvts20">,</span><span class="rvts21"> &nbsp;</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"password"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"12345"</span><span class="rvts21">&nbsp;</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="LoyaltyandAccountDetails"></a><h3>Loyalty and Account Details</h3>
+<p class="rvps2"><span class="rvts6">If the store that iCell as a Service belongs to has loyalty or account customers, then you can use this section to register the customer so that the transaction will generate loyalty points for the transaction or award discounts and specials based on their membership. It does not allow the Web App to pay for orders via their account, however. This must be done in store.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The customer object has two name/value pairs:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id</span><span class="rvts23"> – the remote loyalty/member system’s account ID.</span></li>
+ <li class="rvps6"><span class="rvts25">source</span><span class="rvts23"> – the payment gateway name of the remote loyalty system, currently only supports those configured using the iCell FINCHCORP vendor.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample of a customer section is as follows:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"customer"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1001"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"source"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"ACCOUNT"</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="AddingProducts"></a><h3>Adding Products</h3>
+<p class="rvps2"><span class="rvts6">The products list is a JSON Array of product JSON Objects. There is no inherent limit in how many products can be added here, the same product can be added in different objects if required (if it has a different price, instructions or comments etc).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each product object has the following attributes:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">product</span><span class="rvts23"> </span><span class="rvts29">(required)</span><span class="rvts23"> – the product id (from the catalog) of the product to be added.</span></li>
+ <li class="rvps6"><span class="rvts25">quantity </span><span class="rvts29">(required)</span><span class="rvts23"> – the quantity of the product to add&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">cartid</span><span class="rvts23"> </span><span class="rvts29">(recommended web only)</span><span class="rvts23">– the cart id (line number) allows the web cart to synchronise with the returned transaction.&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">price</span><span class="rvts23"> – the price to sell the item for, will override the till price. The price can either be absolute, or a relative adjustment to the price listed in the catalog.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: square;">
+  <li style="margin-left: 0px" class="rvps8"><span class="rvts23">absolute price, prefix with an @ symbol (e.g. </span><span class="rvts30">"price": "@24.99"</span><span class="rvts23">)</span></li>
+  <li style="margin-left: 0px" class="rvps8"><span class="rvts23">relative % adjustment, &nbsp;add a % sign to the end (e.g. </span><span class="rvts30">"price": "-10%"</span><span class="rvts23"> to sell at 10% discount, or </span><span class="rvts30">"price": "10%"</span><span class="rvts23"> add a 10% surcharge, at item level)</span></li>
+  <li style="margin-left: 0px" class="rvps8"><span class="rvts23">relative $ adjustment, &nbsp;just specify the adjustment amount on its own (e.g. </span><span class="rvts30">"price": "-2"</span><span class="rvts23"> to sell with a $2.00 discount, or </span><span class="rvts30">"price": "2"</span><span class="rvts23"> to add a $2.00 surcharge, at item level)</span></li>
+ </ul>
+ <li class="rvps6"><span class="rvts25">instructions</span><span class="rvts23"> – item modifications, such as sides or instructions for meals (e.g. chips, cook rare etc). These will generally be instructions to the kitchen (for prepared items) and are listed as sub-items in the resulting transaction. Instructions are a comma separated list of free text, free text with a $ amount, or a product id.</span><br/><span class="rvts23">The </span><a class="rvts31" href="#ProductInstructions">instructions end point</a><span class="rvts23"> provides data allowing the website to create a user interface to select these instructions to be provided.</span></li>
+ <li class="rvps6"><span class="rvts25">comments</span><span class="rvts23"> - comments to add to the product. These will generally be added by the a product behaviour as the reason for a price change.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts32">NOTE : On web connections you need to supply ALL products and sundries each time you update the transaction, the transaction data is reset each time you specify either the products or sundries section. On APP connections, you only specify those products you wish to ADD to the transaction.</span></p>
+<p class="rvps6"><span class="rvts33"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample products section:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"products"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts19">&nbsp; &nbsp; &nbsp; &nbsp;"product"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"27103"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"@15.50"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"instructions"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Medium Rare,Chips &amp; Salad,Pepper Sauce $2.00,1001"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Sunday Steak promotion"</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1521"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"@7"</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"3"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"152"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"-50%"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2nd drink half price"</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts20">]</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts37">From a web till, any attempt to modify the products in an existing transaction with payments made will generate the following error:</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps7"><span class="rvts34">{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"instance"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"1"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"EFinchcorpCannotModify"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"time"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"2021-07-12T19:50:43.123+10:00"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"message"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"[deny]&nbsp;Modify&nbsp;not&nbsp;allowed&nbsp;for&nbsp;web&nbsp;order&nbsp;with&nbsp;payment&nbsp;line"</span></p>
+<p class="rvps7"><span class="rvts34">}</span><span class="rvts6"></span></p>
+<a name="DeliverySurchargesandExtras"></a><h3>Delivery, Surcharges and Extras</h3>
+<p class="rvps2"><span class="rvts6">The extras object contains three name/value pairs to specify additional sundry values for the transaction:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">tip</span><span class="rvts23"> – determines the </span><span class="rvts38">amount</span><span class="rvts23"> added as a tip</span></li>
+ <li class="rvps6"><span class="rvts25">surcharge</span><span class="rvts23"> – determines the </span><span class="rvts38">amount</span><span class="rvts23"> added for a transaction level surcharge (e.g. holiday surcharge)</span></li>
+ <li class="rvps6"><span class="rvts25">covers</span><span class="rvts23"> – the number of covers (</span><span class="rvts38">quantity</span><span class="rvts23">).</span></li>
+ <li class="rvps6"><span class="rvts25">delivery</span><span class="rvts23"> - delivery fee </span><span class="rvts38">amount</span><span class="rvts23"> added to the transaction</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps6"><span class="rvts32">NOTE : On web connections you need to supply ALL products and sundries each time you update the transaction, the transaction data is reset each time you specify either the products or sundries section. On APP connections, you only specify those products you wish to ADD to the transaction.</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"extras"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"tip"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2.5"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"surcharge"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"5"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"covers"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"delivery"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"5.5"</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="PaymentDetails"></a><h3>Payment Details</h3>
+<p class="rvps2"><span class="rvts6">The payments list is a JSON array containing JSON objects each representing a payment. Generally speaking, one payment is all that is required, but any number of payments can be supplied in the list.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The structure of each payment object is as follows:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">kind</span><span class="rvts23"> – the name of the payment gateway to apply this as. As iCaaS doesn’t take actually payments via the web, the only iCell vendor supported here is CASH, however multiple “CASH” gateways can be set up with meaningful names (ONLINE). </span><span class="rvts39">Note: limits on the number of payment types allowed may exist in the back-office software.</span></li>
+ <li class="rvps6"><span class="rvts25">amount</span><span class="rvts23"> – the amount of the payment being recorded, &nbsp;or for APP only use - &nbsp;a question mark (?) to represent pay out the transaction.</span></li>
+ <li class="rvps6"><span class="rvts25">comment</span><span class="rvts23"> – a comment to apply to the payment</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample of a payments section:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"payments"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"kind"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"ONLINE"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"45.00"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Online Payment"</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">}</span><br/><span class="rvts20">]</span><span class="rvts6"></span></p>
+<a name="FinishinganOrder"></a><h3>Finishing an Order</h3>
+<p class="rvps2"><span class="rvts6">The order object serves two functions, to set various options and attributes on the transaction and to signal the app or website is finished with the order. You should only include an order object if you do not intend to make any further modifications.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">For the tablet/app API, where the transaction is balanced (no money owing), the transaction will be finalised at the store. If not, it will remain in the store system to be loaded by an instore till for paying the remaining money.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">For the web API, the transaction will remain “incomplete”, even if there is no payment owing. This is so that the transaction can be loaded on an instore till and verified by a cashier prior to collection or delivery.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The name/value pairs for the order object are:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">tag</span><span class="rvts23"> – tag the transaction file so it can easily be grouped with others of the same tag. A web order should use the tag “WEB” to allow in store iCell operators to see all the WEB orders. If no tag is specified, the default added will be “WEB” for WEB orders, no tag is added by default for APP orders.</span></li>
+ <li class="rvps6"><span class="rvts25">receipt</span><span class="rvts23"> – if set to “yes” will print a copy of the transaction at the assigned receipt printer in store.</span></li>
+ <li class="rvps6"><span class="rvts25">kitchen</span><span class="rvts23"> – if set to “yes’ will send a copy of the transaction to the kitchen printer or kitchen monitor.</span></li>
+ <li class="rvps6"><span class="rvts25">email</span><span class="rvts23"> - put a valid email address in this value, the customer will have a tax invoice sent to them (queued) on completion of the transaction.</span></li>
+ <li class="rvps6"><span class="rvts25">sms</span><span class="rvts23"> - put a valid mobile number in this value, the customer will have a text message sent to them (immediate) on acceptance of this transaction.</span></li>
+ <li class="rvps6"><span class="rvts25">&lt;any name&gt; </span><span class="rvts40">-</span><span class="rvts23"> any other name here will be set as a transaction attribute with the same name/value.</span><br/><a name="_Hlk35606173"></a><span class="rvts39">Note: to allow for properly formatted delivery dockets to be printed, use a double backslash (escaped e.g. \\\\) to denote a new line. This may be useful especially for addresses sent as a part of the request.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample order section:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"order"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"tag"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"WEB"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"name"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"John Smith"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"address"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1/1378 Lytton Road,\\\\Hemmant QLD 4174"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"phone"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"0420 666 555"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"receipt"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"yes"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"kitchen"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"yes"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; </span><span class="rvts19">"email"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"j.smith@gmail.com"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; </span><span class="rvts19">"sms"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"0401123456"</span><span class="rvts20">,</span></p>
+<p class="rvps2"><span class="rvts21">&nbsp; </span><span class="rvts19">"type"</span><span class="rvts20">:</span><span class="rvts21"> &nbsp;</span><span class="rvts22">"delivery"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A finalised transaction will return ‘FINAL’ in the status (see response section below), a transaction that is still requiring payment or finalisation at a manned terminal will return ‘OK’. If there are errors, then the error code and message will be in the response.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts24">Note: Web site transactions will always report ‘OK’ as only an instore till can finalise a transaction fully.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
+<a name="OutputsfromtheAPI"></a><h2>Outputs from the API</h2>
+<p class="rvps2"><span class="rvts6">The returned JSON represents the status of the last request and the current state of the transaction. Note that the returned JSON contains mixed string and number JSON values, and consists of the following three sections:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">status</span><span class="rvts23"> – </span><span class="rvts38">value</span><span class="rvts23"> containing return Status</span></li>
+ <li class="rvps6"><span class="rvts25">message</span><span class="rvts23"> – </span><span class="rvts38">value</span><span class="rvts23"> containing description of error if status was an error</span></li>
+ <li class="rvps6"><span class="rvts25">instance</span><span class="rvts23"> – </span><span class="rvts38">value</span><span class="rvts23"> containing the instance id that handled the successful request (normally 0 to 9)</span></li>
+ <li class="rvps6"><span class="rvts25">transaction </span><span class="rvts23">– </span><span class="rvts38">object</span><span class="rvts23"> containing the full transaction&nbsp;</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The transaction consists of the following sections:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">General Information</span><span class="rvts23"> – </span><span class="rvts38">values</span><span class="rvts23"> containing transaction wide information</span></li>
+ <li class="rvps6"><span class="rvts25">attributes</span><span class="rvts23"> – </span><span class="rvts38">object</span><span class="rvts23"> contains transaction attributes excluding hidden ones</span></li>
+ <li class="rvps6"><span class="rvts25">sundries</span><span class="rvts23"> – </span><span class="rvts38">list</span><span class="rvts23"> of sundry </span><span class="rvts38">objects</span><span class="rvts23"> containing information about sundries</span></li>
+ <li class="rvps6"><span class="rvts25">products</span><span class="rvts23"> – </span><span class="rvts38">list</span><span class="rvts23"> of product </span><span class="rvts38">objects</span><span class="rvts23"> containing information about products, and sub products</span></li>
+ <li class="rvps6"><span class="rvts25">payments –</span><span class="rvts38"> list</span><span class="rvts23"> of payments </span><span class="rvts38">objects</span><span class="rvts23"> containing payment information.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"></span><span class="rvts23"></span></p>
+<a name="GeneralInformation"></a><h3>General Information</h3>
+<p class="rvps2"><span class="rvts6">The general information is several name/value pairs within the transaction object, they are:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">transactionid</span><span class="rvts23"> – the 9 character unique transaction ID for this transaction, this will be returned to allow you to access it for more updates, or to allow the customer to print it out for a local cashier to retrieve the order for pickup payment.</span><br/><span class="rvts23">For a quote request, the transaction id returned will also be ‘QUOTE’.</span></li>
+ <li class="rvps6"><span class="rvts25">timestamp</span><span class="rvts23"> – ISO formatted date/time of the transaction</span></li>
+ <li class="rvps6"><span class="rvts25">tableid</span><span class="rvts23"> – for non-web use, this will return the table id for the transaction.</span></li>
+ <li class="rvps6"><span class="rvts25">value</span><span class="rvts23"> – the total value of the transaction products</span></li>
+ <li class="rvps6"><span class="rvts25">gst </span><span class="rvts23">– the total GST included in the total value of the products.</span><span class="rvts23"></span></li>
+</ul>
+<a name="ProductList"></a><h3>Product List</h3>
+<p class="rvps2"><span class="rvts6">The payments list is a JSON array of product objects with the following name/value (and one name/list pair:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id</span><span class="rvts23"> – the product id of the product</span></li>
+ <li class="rvps6"><span class="rvts25">cartid -</span><span class="rvts23"> the cart id that was sent in by the original request (WEB ONLY)</span></li>
+ <li class="rvps6"><span class="rvts25">name</span><span class="rvts23"> – the name of the product</span></li>
+ <li class="rvps6"><span class="rvts25">qty</span><span class="rvts23"> – the quantity of product in this line item (note the same product id can appear in different product objects within the same transaction)</span></li>
+ <li class="rvps6"><span class="rvts25">price</span><span class="rvts23"> – the price per item for the product</span></li>
+ <li class="rvps6"><span class="rvts25">value</span><span class="rvts23"> – the value of the entire line item including discounts etc.</span></li>
+ <li class="rvps6"><span class="rvts23">gst – the GST included in the value of this item.</span></li>
+ <li class="rvps6"><span class="rvts23">comments – any comments added for this item (currently is a comma separated list of sub items)</span></li>
+ <li class="rvps6"><span class="rvts23">subs – a </span><span class="rvts38">list</span><span class="rvts23"> sub items owned by this product, each sub item is an </span><span class="rvts38">object</span><span class="rvts23"> with the same name/value pairs as for the product object (excluding gst and comments). Note that the product ID of a sub item may just be the name of the sub item, and that a sub item may have no price or value associated with it (e.g cooking instruction).</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample of a product object:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"HAMBURGER"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"28002"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">20.7</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">20.7</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"gst"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">1.8818</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"comments"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"No Beetroot, Extra Cheese $2.00"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"subs"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"123"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Extra Cheese"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">2</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">2</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"cartid"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"No Beetroot"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"No Beetroot"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts41">1</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp;</span><span class="rvts20">]</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="PaymentsList"></a><h3>Payments List</h3>
+<p class="rvps2"><span class="rvts6">The payments list is a JSON array of payment objects with the following name/value pairs:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">name</span><span class="rvts23"> – the name of the payment</span></li>
+ <li class="rvps6"><span class="rvts25">method</span><span class="rvts23"> – the kind of payment, this corresponds to the kind used in the input, and generally corresponds to a payment gateway name (of CASH Vendor type) on the live tills.</span></li>
+ <li class="rvps6"><span class="rvts25">amount</span><span class="rvts23"> – the amount of the payment</span></li>
+ <li class="rvps6"><span class="rvts25">comments</span><span class="rvts23"> – any comments added to the payment</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Sample JSON payment object:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Paid EFTPOS"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"method"</span><span class="rvts20">:</span><span class="rvts22">"EFTPOS Receipt"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts41">30.91</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"comments"</span><span class="rvts20">:</span><span class="rvts22">"Visa Payment"</span><br/><span class="rvts21">&nbsp; </span><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="SundriesList"></a><h3>Sundries List</h3>
+<p class="rvps2"><span class="rvts6">The sundries list is a JSON array of sundries objects with the following name/value pairs:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">name</span><span class="rvts23"> – the name of the sundry.</span></li>
+ <li class="rvps6"><span class="rvts25">category</span><span class="rvts23"> – the type of sundry (cover, tip, surcharge)</span></li>
+ <li class="rvps6"><span class="rvts25">amount</span><span class="rvts23"> – the cost or value of the sundry</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Sample Sundries object:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Surcharge"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"category"</span><span class="rvts20">:</span><span class="rvts22">"Sundry"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts41">0.45</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="AttributesList"></a><h3>Attributes List</h3>
+<p class="rvps2"><span class="rvts6">This contains a list of name/value pairs for all the transaction attributes in the transaction.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This might include a transaction name, contact number or any other attribute you wish to store.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample attributes object (with a single attribute).</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts19">"attributes"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"type"</span><span class="rvts20">:</span><span class="rvts22">"dine-in"</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="CommandExecution"></a><h2>Command Execution</h2>
+<p class="rvps2"><span class="rvts6">In addition to the standard functions above, addition custom functions may be available to the API.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">In addition to specifying the APIKEY, and the transaction ID (and the login details and/or table number for APP use) you specify an :"execute" list.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This execute list consists of a list of the following:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts6">"command" value with the name of the special command</span></li>
+ <li class="rvps2"><span class="rvts6">"parameters" value with a list of parameter VALUES as strings, or an empty list if no parameters are required.</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Execute lists will execute AFTER the transaction is loaded, and after the cashier is logged in - and if present will execute INSTEAD OF any product, customer, payments, sundries or attributes sections.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The structure would be (remembering the login section is not present for WEB API use.:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"transactionid"</span><span class="rvts20">:</span><span class="rvts22">"A2B9GA6CP"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"apikey"</span><span class="rvts20">:</span><span class="rvts22">"D07B929E-E0FA-4DC5-948E-7202D553E2E6"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"login"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"cashier"</span><span class="rvts20">:</span><span class="rvts22">" W1234DEMO "</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"password"</span><span class="rvts20">:</span><span class="rvts22">"12345"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"execute"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"command"</span><span class="rvts20">:</span><span class="rvts22">"COMMAND1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"parameters"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts22">"Param1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts22">"Param2"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"command"</span><span class="rvts20">:</span><span class="rvts22">"COMMAND2"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"parameters"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts22">"Param1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts22">"Param2"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts22">"Param3"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The above would execute the following commands against the API:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps2"><span class="rvts6">COMMAND1(Param1,Param2)</span></li>
+ <li class="rvps2"><span class="rvts6">COMMAND2(Param1,Param2,Param3)</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts15">Note</span><span class="rvts6"> that the responses and error codes are just as for normal functions as described in </span><a class="rvts16" href="#ResponsesandErrorCodes">Responses and Error Codes</a><br/><span class="rvts15">Note</span><span class="rvts6"> that if the transaction is transient (i.e. QUOTE) then execute is ignored.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6"></span><span class="rvts6"></span></p>
+<a name="CancelTransaction"></a><h3>Cancel Transaction</h3>
+<p class="rvps2"><span class="rvts6">The Cancel command allows you to cancel a transaction based on the Transaction ID, which will remove it from the on site Tills and send it to iControl as a cancelled transaction.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Example of using the cancel command:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"transactionid"</span><span class="rvts20">:</span><span class="rvts22">"A2B9GA6CP"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"apikey"</span><span class="rvts20">:</span><span class="rvts22">"D07B929E-E0FA-4DC5-948E-7202D553E2E6"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"execute"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"command"</span><span class="rvts20">:</span><span class="rvts22">"CANCEL"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"parameters"</span><span class="rvts20">:[]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A successful cancel will return</span></p>
+<p class="rvps7"><span class="rvts20"></span><br/><span class="rvts20">{</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"instance"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"status"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"OK"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">You cannot cancel a transaction that has a payment on it, if you attempt to do so you will get the following error:</span></p>
+<p class="rvps2"><span class="rvts20"></span><br/><span class="rvts20">{</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"instance"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"status"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"EFinchcorpCannotCancel"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"time"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"2021-01-22T00:22:00.190+10:00"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"message"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"[deny]&nbsp;Cannot&nbsp;cancel&nbsp;an&nbsp;in&nbsp;progress&nbsp;transaction"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note - that if the error EFinchcorpTransactionLocked is returned, then the caller should retry a few seconds later as the transaction has not been released from the previous request.</span><span class="rvts6"></span></p>
+<a name="CompleteTransaction"></a><h3>Complete Transaction</h3>
+<p class="rvps2"><span class="rvts6">The Complete command allows you to complete a transaction based on the Transaction ID, this will skip the step where a normal till would need to finalise the transaction. Behind the scenes it does a Finalise(AUTO).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Example of using the complete command:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"transactionid"</span><span class="rvts20">:</span><span class="rvts22">"A2B9GA6CP"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"apikey"</span><span class="rvts20">:</span><span class="rvts22">"D07B929E-E0FA-4DC5-948E-7202D553E2E6"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"execute"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"command"</span><span class="rvts20">:</span><span class="rvts22">"COMPLETE"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"parameters"</span><span class="rvts20">:[]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A successful complete will return</span></p>
+<p class="rvps7"><span class="rvts20"></span><br/><span class="rvts20">{</span><br/><span class="rvts19">&nbsp;&nbsp;&nbsp;&nbsp;"instance"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"status"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"OK"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">If the transaction cannot be completed, the following error will be returned:</span></p>
+<p class="rvps2"><span class="rvts42"></span><br/><span class="rvts20">{</span><br/><span class="rvts19">&nbsp; &nbsp;"instance"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; &nbsp;"status"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"EFinchcorpInvalidCompleteReason"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; &nbsp;"time"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2021-06-23T19:44:21.381+10:00"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; &nbsp;"message"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"[deny] Invalid Complete Reason"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts20"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note - that if the error EFinchcorpTransactionLocked is returned, then the caller should retry a few seconds later as the transaction has not been released from the previous request.</span><span class="rvts6"></span></p>
+<a name="StatusFunction"></a><h2>Status Function</h2>
+<p class="rvps2"><span class="rvts6">This function supplies status information for the instances that handle transaction requests, it returns a status for the entire service if all instances are operational, each instance returns a true status if the instance is actually running (it does not guarantee that the instance is fully operational).</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">An instance may be missing from the list, meaning some catastrophic failure occurred in that instance, or it may return a status of false if the instance thread has stalled for more than 2 minutes.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This requires authentication, but does NOT require an API Key.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">This is a special request and is a get request to:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps9"><span class="rvts14">https://SERVER/status</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample of a return from the status is:</span></p>
+<p class="rvps7"><span class="rvts34"><br/></span></p>
+<p class="rvps7"><span class="rvts34"><br/></span></p>
+<p class="rvps7"><span class="rvts34">{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"time"</span><span class="rvts34">:&nbsp;</span><span class="rvts36">"2021-07-23T14:19:37.979+10:00"</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"instances"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">6</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"working"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">6</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"instances"</span><span class="rvts34">:&nbsp;[</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"id"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">3</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"till"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">204</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"id"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">0</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"till"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">201</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"id"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">4</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"till"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">205</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"id"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">2</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"till"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">203</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"id"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">1</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"till"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">202</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"id"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">5</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"till"</span><span class="rvts34">:&nbsp;</span><span class="rvts43">206</span><span class="rvts34">,</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="rvts35">"status"</span><span class="rvts34">:&nbsp;</span><span class="rvts44">true</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span></p>
+<p class="rvps7"><span class="rvts34">&nbsp;&nbsp;&nbsp;&nbsp;]</span></p>
+<p class="rvps7"><span class="rvts34">}</span><span class="rvts6"></span></p>
+<a name="Samples"></a><h2>Samples</h2>
+<a name="SampleRequest"></a><h3>Sample Request</h3>
+<p class="rvps2"><span class="rvts20"></span><span class="rvts6"></span></p>
+<a name="Web"></a><h4>Web </h4>
+<p class="rvps2"><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"transactionid"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"NEW"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"apikey"</span><span class="rvts20">:</span><span class="rvts22">"D07B929E-E0FA-4DC5-948E-7202D553E2E6"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"products"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts20">:</span><span class="rvts22">"1520"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts22">"-10%"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts20">:</span><span class="rvts22">"Member Discount"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts20">:</span><span class="rvts22">"11003"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts20">:</span><span class="rvts22">"13030"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">],</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"order"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"tag"</span><span class="rvts20">:</span><span class="rvts22">"WEB"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"John Smith"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"phone"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"0420 666 555"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"address"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1/1378 Lytton Road,\\\\Hemmant QLD 4174"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"receipt"</span><span class="rvts20">:</span><span class="rvts22">"no"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"kitchen"</span><span class="rvts20">:</span><span class="rvts22">"yes"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"type"</span><span class="rvts20">:</span><span class="rvts22">"delivery"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"extras"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"surcharge"</span><span class="rvts20">:</span><span class="rvts22">"0.45"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"delivery"</span><span class="rvts20">:</span><span class="rvts22">"5.5"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"payments"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"kind"</span><span class="rvts20">:</span><span class="rvts22">"ONLINE"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts22">"104.72"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts20">:</span><span class="rvts22">"Online Payment"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="App"></a><h4>App</h4>
+<p class="rvps2"><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"transactionId"</span><span class="rvts20">:</span><span class="rvts22">"14"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"apikey"</span><span class="rvts20">:</span><span class="rvts22">"04A7E88F-0933-4295-AA02-34A79472BB2C"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"login"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"cashier"</span><span class="rvts20">:</span><span class="rvts22">" W1234DEMO "</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"password"</span><span class="rvts20">:</span><span class="rvts22">"12345"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"products"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts20">:</span><span class="rvts22">"27103"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts22">"@15.50"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"instructions"</span><span class="rvts20">:</span><span class="rvts22">"Medium Rare,Chips &amp; Salad,Pepper Sauce $2.00,1001"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts20">:</span><span class="rvts22">"Sunday Steak promotion"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts20">:</span><span class="rvts22">"1521"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts22">"@7"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"product"</span><span class="rvts20">:</span><span class="rvts22">"152"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"quantity"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts22">"-50%"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts20">:</span><span class="rvts22">"2nd drink half price"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">],</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"order"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"tag"</span><span class="rvts20">:</span><span class="rvts22">"APP"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"receipt"</span><span class="rvts20">:</span><span class="rvts22">"no"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"kitchen"</span><span class="rvts20">:</span><span class="rvts22">"yes"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"type"</span><span class="rvts20">:</span><span class="rvts22">"dine-in"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"extras"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"tip"</span><span class="rvts20">:</span><span class="rvts22">"4"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"surcharge"</span><span class="rvts20">:</span><span class="rvts22">"0.45"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"covers"</span><span class="rvts20">:</span><span class="rvts22">"2"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"payments"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"kind"</span><span class="rvts20">:</span><span class="rvts22">"EFTPOS"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts22">"30.45"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"comment"</span><span class="rvts20">:</span><span class="rvts22">"Visa Payment"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">]</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="SampleResponses"></a><h3>Sample Responses</h3>
+<p class="rvps2"><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"instance"</span><span class="rvts20">:</span><span class="rvts22">"5"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"status"</span><span class="rvts20">:</span><span class="rvts22">"OK"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"transaction"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"transactionId"</span><span class="rvts20">:</span><span class="rvts22">"A6D1206EK"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"timestamp"</span><span class="rvts20">:</span><span class="rvts22">"2020-03-18T18:15:28.571+10:00"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"items"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"T BONE 400GM"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"27103"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts41">21</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts41">21</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"gst"</span><span class="rvts20">:</span><span class="rvts41">1.9091</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"comments"</span><span class="rvts20">:</span><span class="rvts22">"Medium Rare, Chips &amp;&amp; Salad,Pepper Sauce $2.00, Arvo Lager Stub $3.50"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"subs"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"Medium Rare"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Medium Rare"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"Chips &amp; Salad"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Chips &amp; Salad"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"Pepper Sauce"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Pepper Sauce"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts41">2</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts41">2</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"1001"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"ARVO LAGER STUB"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts41">3.5</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts41">3.5</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"CORONA STUB"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"1521"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts41">7</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts41">7</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"gst"</span><span class="rvts20">:</span><span class="rvts41">0.6364</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"TOOHEYS OLD 7OZ"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"152"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts41">1</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts41">1.55</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts41">1.55</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"gst"</span><span class="rvts20">:</span><span class="rvts41">0.1409</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">],</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"sundries"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Customer Tip"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"category"</span><span class="rvts20">:</span><span class="rvts22">"Sundry"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts41">4</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Surcharge"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"category"</span><span class="rvts20">:</span><span class="rvts22">"Sundry"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts41">0.45</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Covers"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"category"</span><span class="rvts20">:</span><span class="rvts22">"Cover"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts19">0</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Surcharge EFTPOS"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"category"</span><span class="rvts20">:</span><span class="rvts22">"Sundry"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts41">0.46</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">],</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"value"</span><span class="rvts20">:</span><span class="rvts41">34.46</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"gst"</span><span class="rvts20">:</span><span class="rvts41">2.7273</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"payments"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts22">"Paid EFTPOS"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"method"</span><span class="rvts20">:</span><span class="rvts22">"EFTPOS Receipt"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"amount"</span><span class="rvts20">:</span><span class="rvts41">30.91</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"comments"</span><span class="rvts20">:</span><span class="rvts22">"Visa Payment"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">],</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"attributes"</span><span class="rvts20">:{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts19">"type"</span><span class="rvts20">:</span><span class="rvts22">"dine-in"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="CatalogFunctions"></a><h1>Catalog Functions</h1>
+<p class="rvps2"><span class="rvts6">The catalog endpoints require no input and return various components of the catalog required for an external web shop to display product information. These end points are provided by iConnect Config Service (ICCS) via iCaaS.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The four end points are:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts38">PRODUCTS</span><span class="rvts23"> – returns a full list of products with information about each product</span></li>
+ <li class="rvps6"><span class="rvts38">STOCK</span><span class="rvts23"> – returns a list of products with current stock levels and recent sales</span></li>
+ <li class="rvps6"><span class="rvts38">NAV</span><span class="rvts23"> – returns a hierarchy used for a user interface element to select products by general groupings.</span></li>
+ <li class="rvps6"><span class="rvts38">CONFIG </span><span class="rvts23">– returns a json object with information and appearance information</span></li>
+ <li class="rvps6"><span class="rvts38">INSTRUCTIONS</span><span class="rvts23"> – returns information to allow a user interface element to select instructions and modifiers for products (e.g. Steak rare, or onion sauce etc).</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">All catalog end points require one query parameter:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts38">LOCATION</span><span class="rvts23"> – Value is an integer location id - provided by the venue, is the location id corresponding to the store you are service (for example a bistro store or liquor store).&nbsp;</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23">For example - to request the products list for location 14, use the following request:</span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps10"><span class="rvts23">https://SERVER/Catalog/Products?location=14</span></p>
+<p class="rvps10"><span class="rvts23"><br/></span></p>
+<p class="rvps10"><span class="rvts23"><br/></span></p>
+<p class="rvps10"><span class="rvts23"></span><span class="rvts23"></span></p>
+<a name="ActiveProductsInformation"></a><h2>Active Products Information</h2>
+<p class="rvps2"><span class="rvts6">The products function returns a JSON array of product objects as follows:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id</span><span class="rvts23"> – the product id of the product used to pass into the transaction API</span></li>
+ <li class="rvps6"><span class="rvts25">parent</span><span class="rvts23"> – optional product id of the parent product (which groups products that vary in size only together)</span></li>
+ <li class="rvps6"><span class="rvts25">name</span><span class="rvts23"> – the display name of the product</span></li>
+ <li class="rvps6"><span class="rvts25">description </span><span class="rvts23">– long description of the product</span></li>
+ <li class="rvps6"><span class="rvts25">navigator</span><span class="rvts23"> – the point that this product appears on the </span><a class="rvts31" href="#NavigatorStructure">navigator</a></li>
+ <li class="rvps6"><span class="rvts25">instructions </span><span class="rvts23">– determines the instructions/options available for this product (e.g. steak rare etc), points to the data returned by the </span><a class="rvts31" href="#ProductInstructions">catalog instructions end point</a></li>
+ <li class="rvps6"><span class="rvts25">size – </span><span class="rvts23">the optional size of the package (e.g. 1.5l)&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">package</span><span class="rvts23"> - the description of the package (e.g. Carton or 6pk)</span></li>
+ <li class="rvps6"><span class="rvts25">packqty</span><span class="rvts23"> - how many singles are included in the package (e.g.6)</span></li>
+ <li class="rvps6"><span class="rvts25">container</span><span class="rvts23"> - the container the single is in (e.g. Bottle, Can etc)</span></li>
+ <li class="rvps6"><span class="rvts25">barcode - </span><span class="rvts23">the optional normal barcode for the product</span></li>
+ <li class="rvps6"><span class="rvts25">image </span><span class="rvts23">– primary image ID (use </span><a class="rvts31" href="#ImageFunctions1">images end point</a><span class="rvts23"> to retrieve image)</span></li>
+ <li class="rvps6"><span class="rvts25">images </span><span class="rvts23">– (not yet implemented) array of secondary product images for this product.</span></li>
+ <li class="rvps6"><span class="rvts25">sell</span><span class="rvts23"> – the nominal sell price of the product (which will be altered by surcharges and discounts)</span></li>
+ <li class="rvps6"><span class="rvts25">cost - </span><span class="rvts23">the nominal cost of the product if one is available (default is no cost price)</span></li>
+ <li class="rvps6"><span class="rvts25">min</span><span class="rvts23"> – optional minimum purchase quantity (default is 1) of this item</span></li>
+ <li class="rvps6"><span class="rvts25">max</span><span class="rvts23"> – optional maximum purchase quantity (default is all) of this item</span></li>
+ <li class="rvps6"><span class="rvts25">tags</span><span class="rvts23"> – a JSON object containing tag name/value pairs (e.g. brand = FOSTERS)</span></li>
+ <li class="rvps6"><span class="rvts25">specials</span><span class="rvts23"> - a JSON array optionally containing special pricing&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">family</span><span class="rvts23"> - an optional JSON array containing related products</span></li>
+ <li class="rvps6"><span class="rvts25">display</span><span class="rvts23"> - if 'yes' then this is the product to display when grouping products in families, if no then it is displayed within the master product instead.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Each special object within the specials array has the following values:</span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id - </span><span class="rvts23">the special id (promo id) for the special price</span></li>
+ <li class="rvps6"><span class="rvts25">group</span><span class="rvts23"> - the product group used to determine this special, currently either 'Retail' or 'MixMatch'</span></li>
+ <li class="rvps6"><span class="rvts25">code</span><span class="rvts23"> - the code for this particular part of the promotion (optional)</span></li>
+ <li class="rvps6"><span class="rvts25">name - </span><span class="rvts23">a descriptive name for the promotion</span></li>
+ <li class="rvps6"><span class="rvts25">start</span><span class="rvts23"> - if present is the start date for the special price</span></li>
+ <li class="rvps6"><span class="rvts25">finish</span><span class="rvts23"> - if present is the end date for the special price</span></li>
+ <li class="rvps6"><span class="rvts25">qty</span><span class="rvts23"> - the number of this item required to trigger the promotion</span></li>
+ <li class="rvps6"><span class="rvts25">price</span><span class="rvts23"> - the special price itself</span></li>
+ <li class="rvps6"><span class="rvts25">valid - </span><span class="rvts23">the date/time the promotion was added or updated last</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23">Each family object within the family array has the following values:</span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id - </span><span class="rvts23">the product ID of the associated product</span></li>
+ <li class="rvps6"><span class="rvts25">name</span><span class="rvts23"> - the name of the associated product</span></li>
+ <li class="rvps6"><span class="rvts25">size</span><span class="rvts23"> - the size (e.g. 4 x 375ml) of the associated product</span></li>
+ <li class="rvps6"><span class="rvts25">sell</span><span class="rvts23"> - the normal sell price of the associated product</span></li>
+</ul>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample product object:</span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1520"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"parent"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1521"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Corona Carton"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"size"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"330ml"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"packqty"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"24"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp;"container"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"BOTTLE"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp;"package"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"CARTON"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"barcode"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"80660956091"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"supplier"</span><span class="rvts20">:</span><span class="rvts19">&nbsp;</span><span class="rvts22">"CASTLEMAINE&nbsp;PERKINS"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"navigator"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"40201"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"sell"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"56.99"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"cost"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"42.00"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"tags"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"department"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"PACKAGED BEER IMPORTED"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; </span><span class="rvts19">"brand"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"LION NATHAN"</span><br/><span class="rvts21">&nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"specials"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"ICE"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"group"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"MixMatch"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"code"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2BUYA"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Buy 2 and get a deal!"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"start"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2020-11-01"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"finish"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2020-12-31"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"price"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"49.50"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp;</span><span class="rvts19">"valid"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2020-12-04 15:07:11"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp;</span><span class="rvts20">],</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"display"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"yes"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp;</span><span class="rvts19">"family"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><span class="rvts21">&nbsp;</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">{</span><span class="rvts21">&nbsp;</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1522"</span><span class="rvts20">,</span><span class="rvts21"> </span><span class="rvts19">"name"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Corona Six Pack"</span><span class="rvts20">,</span><span class="rvts21"> </span><span class="rvts19">"size"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"6 x 333ml"</span><span class="rvts20">,</span><span class="rvts21"> </span><span class="rvts19">"sell"</span><span class="rvts21"> </span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"32.99"</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp;</span><span class="rvts20">]</span><span class="rvts21"> &nbsp;</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts6">Note that the names returned by the transaction end point will be internal receipt friendly names (all caps etc) not the names used to display on the user interface.</span></p>
+<p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
+<a name="StockLevels"></a><h2>Stock Levels</h2>
+<p class="rvps2"><span class="rvts6">The stocks function returns a JSON array of stock objects as follows:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id</span><span class="rvts23"> – the product id of the product as per the catalog</span></li>
+ <li class="rvps6"><span class="rvts25">qty</span><span class="rvts23"> – the currently available quantity&nbsp;</span></li>
+ <li class="rvps6"><span class="rvts25">recent</span><span class="rvts23"> – recent sales to allow for a determination of low stock, check in store statuses.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Sample stock object:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1520"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"qty"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"10"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts19">"recent"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"1"</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="NavigatorStructure"></a><h2>Navigator Structure</h2>
+<p class="rvps2"><span class="rvts6">The nav end point returns a hierarchical JSON array of JSON objects each either containing a child list, or if a leaf node of the tree containing a navigator id uses to determine which produces appear.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each JSON object contains two of the following three JSON name/value pairs:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">name</span><span class="rvts23"> – all objects have a name which is displayed on the user interface in the hierarchy</span></li>
+ <li class="rvps6"><span class="rvts25">count </span><span class="rvts23">– a cumulative total of the number of products under that navigator (at any level deep), “0” if no products. This can be used to filter the navigator to show only active navigation and to show the product count to the end user.</span></li>
+ <li class="rvps6"><span class="rvts25">children</span><span class="rvts23"> – a normal node will have a children value which itself is a JSON array of further node objects</span></li>
+ <li class="rvps6"><span class="rvts25">id</span><span class="rvts23"> – a leaf node (no children) contains a nav id which can be matched with the navigator value of each product to determine what products appear at this point.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample of a small navigator is:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Imported Beer"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">“count”:</span><span class="rvts21"> </span><span class="rvts19">“</span><span class="rvts41">14</span><span class="rvts19">”</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts19">"children"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Mid-Strength"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"40202"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">“count”:</span><span class="rvts21"> </span><span class="rvts19">“</span><span class="rvts41">4</span><span class="rvts19">”</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Low/Non Alcoholic"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"40203"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">“count”:</span><span class="rvts21"> </span><span class="rvts19">“</span><span class="rvts41">8</span><span class="rvts19">”</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"name"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Full-Strength"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"40201"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">“count”:</span><span class="rvts21"> </span><span class="rvts19">“</span><span class="rvts41">2</span><span class="rvts19">”</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts20">}</span><span class="rvts6"></span></p>
+<a name="ProductInstructions"></a><h2>Product Instructions</h2>
+<p class="rvps2"><span class="rvts6">The instructions end point returns a list of instruction options available to configure options on a product (e.g. base size for a pizza, cooking for a steak etc). Each product will have an instructions attribute, which points to one of a number of selectors:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each selector contains two name/value pairs:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">id </span><span class="rvts23">- the id of the selector – this is what the value in the product points to</span></li>
+ <li class="rvps6"><span class="rvts25">choices </span><span class="rvts23">– a json array of group pickers, each allowing you a choice in a particular aspect (e.g. for steak – one group might be cooking, another sauce type)</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each choice contains four name/value pairs:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">group</span><span class="rvts23"> – a group name to display to tell the end user what they are picking</span></li>
+ <li class="rvps6"><span class="rvts25">min </span><span class="rvts23">– the minimum number of choices in this group (a mandatory option has a min of 1)</span></li>
+ <li class="rvps6"><span class="rvts25">max </span><span class="rvts23">– the maximum number of choices in this group (generally unlimited choice will be flagged with a max of 99)</span></li>
+ <li class="rvps6"><span class="rvts25">options </span><span class="rvts23">– a list of available options for this group</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Each option can be in one of 3 formats:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">plain text</span><span class="rvts23"> – e.g. ‘Medium Rare’, these options are free choices</span></li>
+ <li class="rvps6"><span class="rvts25">plain text with price </span><span class="rvts23">– e.g. ‘Prawn Topper $8.00’, these options are priced choices with the price being at the end.</span></li>
+ <li class="rvps6"><span class="rvts25">Integer value</span><span class="rvts23"> – e.g. 1520, these options need to be looked up in the catalog as they represent an existing product as a choice.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Once the customer has selected which options to use, pass them in as is (as they appear In the options list) as a comma separated list into the ‘instructions’ attribute of an added product in the transaction end point.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">e.g. </span><span class="rvts14">"instructions" : "Medium Rare, Swiss Topper $8.00,1001"</span></p>
+<p class="rvps2"><span class="rvts14"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample of an instruction selector list:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">[</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"steak"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"choices"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"group"</span><span class="rvts20">:</span><span class="rvts22">"Steak Cooking"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"min"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"max"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"options"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Blue"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Rare"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Medium Rare"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Medium"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Medium Well"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Well Done"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Extra Well"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"group"</span><span class="rvts20">:</span><span class="rvts22">"Steak Topper"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"min"</span><span class="rvts20">:</span><span class="rvts22">"0"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"max"</span><span class="rvts20">:</span><span class="rvts22">"10"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"options"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Swiss Topper $8.00"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Prawn Topper $8.00"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Calamari Topper $8.00"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">},</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"id"</span><span class="rvts20">:</span><span class="rvts22">"fish"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts19">"choices"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">{</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"group"</span><span class="rvts20">:</span><span class="rvts22">"Fish Cooking"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"min"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"max"</span><span class="rvts20">:</span><span class="rvts22">"1"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts19">"options"</span><span class="rvts20">:[</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Baked"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Crumbed"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Battered"</span><span class="rvts20">,</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts22">"Pan Fried"</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts21">&nbsp; &nbsp; &nbsp; </span><span class="rvts20">]</span><br/><span class="rvts21">&nbsp; &nbsp;</span><span class="rvts20">}</span><br/><span class="rvts20">]</span><span class="rvts6"></span></p>
+<a name="SiteConfig"></a><h2>Site Config</h2>
+<p class="rvps2"><span class="rvts6">The config end point is different to the others as it provides global configuration for the website, rather than specific to products. However as the usage of the config end point is identical to that of the other catalog end points – it has been placed within the catalog end point.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">It returns information that can vary by store – but generally speaking will provide the following:</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps6"><span class="rvts25">abn</span><span class="rvts23"> – Australian Business number to be displayed on the website (which may be different to the in store ABN)</span></li>
+ <li class="rvps6"><span class="rvts25">address </span><span class="rvts23">– Address of the store, especially for the purposes of customers wanting to pickup orders.</span></li>
+ <li class="rvps6"><span class="rvts25">phonenumber</span><span class="rvts23"> – Contact number for store, especially for queries about deliveries and pickups.</span></li>
+ <li class="rvps6"><span class="rvts25">mobile –</span><span class="rvts23"> Contact mobile number, generally for SMS contact</span></li>
+ <li class="rvps6"><span class="rvts25">email –</span><span class="rvts23"> Email contact for orders and support</span></li>
+ <li class="rvps6"><span class="rvts25">businessname </span><span class="rvts23">– Official business name of the store, as with abn may be different for the online store.</span></li>
+ <li class="rvps6"><span class="rvts25">location</span><span class="rvts23"> – gps coordinates latitude(East-West)/longitude (North-South) comma separated pair.</span></li>
+ <li class="rvps6"><span class="rvts25">logoimage – </span><span class="rvts23">logo image id (which can be retrieves by the image endpoint)</span></li>
+ <li class="rvps6"><span class="rvts25">css</span><span class="rvts23"> – raw CSS chunk used for customised formatting of the website look and feel.</span></li>
+</ul>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps6"><span class="rvts23"><br/></span></p>
+<p class="rvps2"><span class="rvts6">Note – other values can be added by specific stores as required.</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts6">Example output:</span></p>
+<p class="rvps2"><span class="rvts6"></span><br/><span class="rvts20">{</span><br/><span class="rvts19">&nbsp; "abn"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"2901088229"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "address"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"177 Musgrave St\\\\Berserker, QLD, 4701\\\\Australia"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "businessname"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Ascot Hotel"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "css"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">".banner-wrap{margin-top: 45px;overflow: hidden;}\\\\.pmd-intro-container{min-height: 600px; padding: 30px 0;}\\\\.pmd-intro-bg-img{background-image: url(../images/album-slide1.jpg);}\\\\.pmd-intro-img-overlay:before {opacity: .6;}\\\\.intro-text{color:#FFF; z-index: 100;}\\\\@media (max-width: 767px) {\\\\\th1 {font-size: 2rem;}\\\\\tp.lead {font-size: 1rem;}\\\\\t.pmd-intro-container {min-height: 400px;}\\\\}\\\\@media (min-width: 768px) and (max-width: 991px) {\\\\\t.intro-text {max-width: 540px;}\\\\}"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "email"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"orders@ascothotel.com.au"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "location"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"-23.362335, 150.522343"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "logoimage"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"Ascot Bull Logo"</span><span class="rvts20">,</span><br/><span class="rvts19">&nbsp; "phonenumber"</span><span class="rvts20">:</span><span class="rvts21"> </span><span class="rvts22">"(07) 4922 4719"</span><br/><span class="rvts20">}</span></p>
+<p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
+<a name="ImageFunctions1"></a><h1>Image Functions</h1>
+<p class="rvps2"><span class="rvts6">The image endpoint allows simple retrieval of images from the library use by the local tills and systems. These images can be various formats but will recommend that web images be stored by the in-store management systems as PNG or JPG.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The image request has a single query parameter, which is the image id. This has no extension or file type. The image ID can generally be any alphanumeric sequence.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The image returned will have a mime time (‘image/xxx’) appropriate to the image stored, and will be directly usable in image links, however it is recommended that web sites cache these images locally to reduce the load on the generally fragile internet connections to/from the stores.</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">A sample image request:</span><br/><span class="rvts45">https://10.0.2.220:9180/image?id=1180</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The above sample will return the image file stored with Image Id ‘1180’, if it exists. If it does not exist, the server will return - </span><span class="rvts45">509 IMAGE: Config Server Returned no content</span></p>
+<p class="rvps2"><span class="rvts6"><br/></span></p>
+<p class="rvps2"><span class="rvts6">The structure of image IDs is not covered in this API document as they are set up in the in-store management tool (icmsImages) and thus controlled by the store, not the API.&nbsp;</span></p>
+<p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
+
+			
+			<p class="copyright">
+				Copyright &copy; 2020  by Finchcorp Systems. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+		
+</body>
+</html>
+
